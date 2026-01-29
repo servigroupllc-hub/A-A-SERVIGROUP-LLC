@@ -589,10 +589,20 @@ select {
     background: var(--color-gray-50);
 }
 
+/* Refactored to Columns to isolate expansion behavior */
 .services__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: var(--spacing-xl);
+    align-items: flex-start;
+}
+
+.services__column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    flex: 1;
+    min-width: 320px;
 }
 
 .service-card {
@@ -971,6 +981,9 @@ select {
 
 /* Responsive adjustments for expandable cards */
 @media screen and (max-width: 768px) {
+    .services__grid {
+        flex-direction: column;
+    }
     .service-card__details {
         padding-left: 0;
         padding-right: 0;
