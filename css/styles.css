@@ -1739,7 +1739,7 @@ select {
 }
 
 .footer__logo-img {
-    height: 80px;
+    height: 160px;
     width: auto;
     max-width: 100%;
     object-fit: contain;
@@ -1748,20 +1748,20 @@ select {
 
 @media screen and (max-width: 992px) {
     .footer__logo-img {
-        height: 70px;
+        height: 120px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .footer__logo-img {
-        height: 60px;
+        height: 100px;
         margin: 0 auto;
     }
 }
 
 @media screen and (max-width: 480px) {
     .footer__logo-img {
-        height: 50px;
+        height: 90px;
     }
 }
 
@@ -1846,7 +1846,7 @@ select {
 }
 
 .footer__bottom i {
-    color: #ef4444;
+    color: var(--color-primary);
 }
 
 /* ===== RESPONSIVE ===== */
