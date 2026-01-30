@@ -589,7 +589,13 @@ select {
 .services__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: var(--spacing-xl);
+    gap: var(--spacing-2xl);
+}
+
+.services__column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
 }
 
 .service-card {
