@@ -1,7 +1,6 @@
 /* ============================================
    CLEANPRO SERVICES - MAIN STYLES
    ============================================ */
-
 /* ===== CSS VARIABLES ===== */
 :root {
     /* Primary colors - Blue */
@@ -318,6 +317,10 @@ select {
 }
 
 @media screen and (max-width: 480px) {
+    .nav__logo {
+        font-size: var(--text-base);
+    }
+    
     .nav__logo-img {
         height: 35px;
     }
