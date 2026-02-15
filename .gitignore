@@ -15,10 +15,7 @@ venv/
 env/
 
 # Project Specific (Temporary Scripts)
-cleanup_gallery.py
-remove_overlays.py
-reorder_gallery.py
-test-service-card.html
+# (Deleted)
 
 # Node
 node_modules/
