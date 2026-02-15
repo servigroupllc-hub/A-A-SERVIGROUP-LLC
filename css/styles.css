@@ -1380,21 +1380,21 @@ select {
 }
 
 .promotion-card:hover {
-  background-color: var(--color-gray-50);
-  transform: none; /* Disable lift effect */
+  background-color: transparent; /* No hover background */
+  transform: none;
   box-shadow: none;
 }
 
 .promotion-card--featured {
-  background: linear-gradient(to bottom, #f0f9ff, #ffffff);
-  border-color: var(--color-primary-light);
-  transform: scale(1.05);
-  box-shadow: var(--shadow-lg);
+  background: none; /* Remove gradient */
+  border: none;
+  transform: none;
+  box-shadow: none;
   z-index: 1;
 }
 
 .promotion-card--featured:hover {
-  transform: scale(1.05) translateY(-5px);
+  transform: none;
 }
 
 .promotion-card__tag {
