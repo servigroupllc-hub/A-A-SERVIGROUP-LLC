@@ -1,0 +1,25 @@
+# System Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE Settings
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+
+# Project Specific (Temporary Scripts)
+cleanup_gallery.py
+remove_overlays.py
+reorder_gallery.py
+test-service-card.html
+
+# Node
+node_modules/
+npm-debug.log
