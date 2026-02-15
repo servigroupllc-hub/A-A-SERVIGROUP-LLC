@@ -596,6 +596,7 @@ select {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-2xl);
+    height: 100%; /* Ensure column takes full height of grid cell */
 }
 
 .service-card {
@@ -606,6 +607,19 @@ select {
     box-shadow: var(--shadow-sm);
     transition: all var(--transition-base);
     border: 1px solid var(--color-gray-100);
+    height: 100%; /* Ensure card fills column height */
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card__details {
+    flex-grow: 1; /* Push bottom content down */
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card__details .btn {
+    margin-top: auto; /* Ensure button is always at bottom */
 }
 
 .service-card:hover {
@@ -2294,4 +2308,22 @@ select {
 
 
 
+
+
+/* Enforce uniform gallery item size */
+.gallery__item {
+    height: 350px; /* Fixed height for uniformity */
+}
+
+.gallery__item-wrapper {
+    height: 100%;
+}
+
+.gallery__img, 
+.gallery__video-container,
+.gallery__video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
