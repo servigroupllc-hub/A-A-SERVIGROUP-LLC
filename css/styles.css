@@ -2296,3 +2296,10 @@ select {
   transform: scale(1.02);
 }
 
+
+/* Middle promotion card icon style */
+.promotions__grid .promotion-card:nth-child(2) .promotion-card__icon {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
