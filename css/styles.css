@@ -2418,3 +2418,12 @@ select {
     }
 }
 
+
+/* Fixed Service Card Expansion */
+.service-card--expanded {
+    height: auto !important;
+    min-height: 300px;
+    overflow: visible !important;
+    z-index: 5;
+}
+
